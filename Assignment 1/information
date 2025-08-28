@@ -1,0 +1,28 @@
+# Hubs
+    "ANC": 8001,
+    "SEA": 8002,
+    # Alaska spokes + a few regionals
+    "FAI": 8003,  # Fairbanks
+    "BRW": 8004,  # Utqiaġvik (Barrow)
+    "OTZ": 8005,  # Kotzebue
+    "JNU": 8006,  # Juneau
+    "BET": 8007,  # Bethel
+    "ADQ": 8008,  # Kodiak
+    "SIT": 8009,  # Sitka
+    "PSG": 8010,  # Petersburg
+    "OME": 8011,  # Nome
+    "KTN": 8012,  # Ketchikan
+
+# Flight Paths
+    "ANC": ["FAI","BRW","OTZ","JNU","BET","ADQ","SIT","PSG","OME","KTN","SEA"],
+    "SEA": ["ANC"],
+    "FAI": ["ANC"],
+    "BRW": ["ANC"],
+    "OTZ": ["ANC"],
+    "JNU": ["ANC"],
+    "BET": ["ANC"],
+    "ADQ": ["ANC"],
+    "SIT": ["ANC"],
+    "PSG": ["ANC"],
+    "OME": ["ANC"],
+    "KTN": ["ANC"]
