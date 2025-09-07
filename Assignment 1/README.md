@@ -6,3 +6,5 @@ topology here? Explain.
 
 3) Please state your assumptions and your thoughts inspired by this exercise in
 the context of Computer Networks.
+
+# first/last-name jsons taken from https://github.com/terryweiss/ink-collector/tree/master/tests/nottests
