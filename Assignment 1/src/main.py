@@ -12,3 +12,9 @@ Logs: every node writes clear logs (send/recv/route/arrival/termination) goes in
 
 '''
 
+# Client Socket
+socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+#s.connect(("128.0.0.1") port)
+
+
+
