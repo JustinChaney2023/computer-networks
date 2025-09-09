@@ -1,10 +1,11 @@
 import json
 import random
+import os
 
-# Ensure you run the program from within the CD for this to work properly lol
-
-first_names = "first-names.json"
-last_names = "last-names.json"
+# Connects the jsons form the config folder to here using os built-in
+config_folder = os.path.join(os.path.dirname(__file__), "..", "config") # CHATGPT LINE
+first_names = os.path.join(config_folder, "first-names.json")
+last_names = os.path.join(config_folder, "last-names.json")
 
 _FIRST_NAMES = None
 _LAST_NAMES = None
