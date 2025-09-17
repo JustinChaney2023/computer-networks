@@ -13,8 +13,34 @@ Logs: every node writes clear logs (send/recv/route/arrival/termination) goes in
 '''
 
 # Client Socket
-socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 #s.connect(("128.0.0.1") port)
 
 
 
+''' 
+Assignment is simplified
+anc->seattle
+nearby->anc nearby->sea
+focus is on how to run multiple client-server tcp sockets
+should be able to handle concurrency # not opening/closing sockets 1 by 1 should be a few
+grading on a sliding scale / check grading matrix (reasonable assumptions dont oversimplify)
+only 1 layover
+bi directional fai->anc # anc->fai
+
+500 messages in 6 minutes
+
+departure is client
+server is arrival
+
+check msg / if u are dest end connection if u are a layover then send to dest 
+each client generates random flights
+or
+make a scheduler that makes random flights and sends to origin
+
+mininet.org
+---------------------
+This is a Airport Network Emulator not simulator
+---------------------
+
+'''
