@@ -13,8 +13,6 @@ Logs: every node writes clear logs (send/recv/route/arrival/termination) goes in
 '''
 
 # Client Socket
-client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-#s.connect(("128.0.0.1") port)
 
 
 
@@ -44,3 +42,6 @@ This is a Airport Network Emulator not simulator
 ---------------------
 
 '''
+
+# might want to consider UDP for constant writing and no wait for response but could do tcp and confirm handshakes and get more reliablility which is important for airports
+
