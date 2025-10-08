@@ -1,5 +1,3 @@
-import socket
-
 '''
 System Overview:
 Peers = Airports: each airport is a process that can both accept and initiate socket connections. Run them through multiple terminals
@@ -13,8 +11,6 @@ Logs: every node writes clear logs (send/recv/route/arrival/termination) goes in
 '''
 
 # Client Socket
-
-
 
 ''' 
 Assignment is simplified
@@ -42,6 +38,4 @@ This is a Airport Network Emulator not simulator
 ---------------------
 
 '''
-
-# might want to consider UDP for constant writing and no wait for response but could do tcp and confirm handshakes and get more reliablility which is important for airports
 
