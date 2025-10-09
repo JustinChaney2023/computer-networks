@@ -1,0 +1,17 @@
+# Hubs available for layovers. Destinations can choose one or rotate through many.
+hubs: ["ANC", "SEA"]
+
+default_hub:
+  SEA: "ANC"
+  FAI: ["ANC", "SEA"]
+  BRW: "ANC"
+  OTZ: "ANC"
+  BET: "ANC"
+  JNU: ["ANC", "SEA"]
+  SIT: "ANC"
+  KTN: "ANC"
+  ADQ: "ANC"
+  YAK: "ANC"
+  PSG: "ANC"
+  OME: "ANC"
+  ANC: "SEA"

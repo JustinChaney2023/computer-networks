@@ -2,8 +2,7 @@ import json
 import random
 import os
 
-# Connects the jsons form the config folder to here using os built-in
-config_folder = os.path.join(os.path.dirname(__file__), "..", "config") # CHATGPT LINE
+config_folder = os.path.join(os.path.dirname(__file__), "..", "config") # GPT Line
 first_names = os.path.join(config_folder, "first-names.json")
 last_names = os.path.join(config_folder, "last-names.json")
 
@@ -11,7 +10,7 @@ _FIRST_NAMES = None
 _LAST_NAMES = None
 
 def _read_json_array(path):
-    # Return a list of strings loaded from a JSON file at path
+    # return a list of strings loaded from a JSON file at path
     try:
         with open(path, "r", encoding="utf-8") as f:
             data = json.load(f)
@@ -33,17 +32,9 @@ def _ensure_loaded():
         _LAST_NAMES = _read_json_array(last_names)
 
 def random_full_name(seperator=" ", titlecase=True, rng=None):
-    """
-    Return a random full name.
+# return a random full name
+    # returns = "Alice Johnson"
 
-    Args:
-        separator (str): character(s) placed between first and last (default " ").
-        titlecase (bool): if True, convert parts to Title Case (e.g., 'alice' -> 'Alice').
-        rng: optional random generator with .choice(list). If None, use Python's random.
-
-    Returns:
-        str: e.g., "Alice Johnson"
-    """
     _ensure_loaded()
 
     chooser = rng.choice if rng is not None else random.choice
