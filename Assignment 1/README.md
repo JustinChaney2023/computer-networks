@@ -1,9 +1,5 @@
 # Airline Server Simulation
 
-##### Copilot auto-completes were used
-##### I also used chatgpt to get some help error fixing
-##### https://devdocs.io/python~3.13/ for researching standard library things
-
 1) How to run your program? Please state your assumptions clearly.
 
     Assignemnt was tested and written with Python 3.13 in mind
